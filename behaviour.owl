@@ -1,0 +1,529 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology ;
+   <http://purl.org/dc/elements/1.1/title> "Behaviour Ontology"
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#definition
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#noteToSelf
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#noteToSelf> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#synonym
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#synonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#title
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R7OWz9NcABlazXlexg6HRX9
+<http://webprotege.stanford.edu/R7OWz9NcABlazXlexg6HRX9> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RDtExESuZbaday6OSJgXBzd> ;
+                                                         rdfs:label "hasUnit" .
+
+
+###  http://webprotege.stanford.edu/R8GoVVwn0VKTSyFynqwDRz4
+<http://webprotege.stanford.edu/R8GoVVwn0VKTSyFynqwDRz4> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Action> ;
+                                                         rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Action> ;
+                                                         rdfs:label "happensBefore" .
+
+
+###  http://webprotege.stanford.edu/R8oxUwoOPMBQ1JtKhnevQgS
+<http://webprotege.stanford.edu/R8oxUwoOPMBQ1JtKhnevQgS> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#correlatesWith> ;
+                                                         rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                         rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                         rdfs:label "smallCorrelation" .
+
+
+###  http://webprotege.stanford.edu/R8u5o6iBJVe8WPDIikUZGH9
+<http://webprotege.stanford.edu/R8u5o6iBJVe8WPDIikUZGH9> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG> ;
+                                                         rdfs:range <http://xmlns.com/foaf/0.1/Document> ;
+                                                         rdfs:label "publications" .
+
+
+###  http://webprotege.stanford.edu/RChbHoqVYS8fr6SICGRbV39
+<http://webprotege.stanford.edu/RChbHoqVYS8fr6SICGRbV39> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RO0KQrJpCJmqrSwt3gAnzZ> ;
+                                                         rdfs:label "hasFrequency" .
+
+
+###  http://webprotege.stanford.edu/RDfRkDOC8mcxmTuSddlcaUb
+<http://webprotege.stanford.edu/RDfRkDOC8mcxmTuSddlcaUb> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                                         rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RCN5jA8ykeOmo5JfvQIwYpa> ;
+                                                         rdfs:label "hasBeginning" .
+
+
+###  http://webprotege.stanford.edu/RKXejfmIGGs1GoEvBdoaBM
+<http://webprotege.stanford.edu/RKXejfmIGGs1GoEvBdoaBM> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                                        rdfs:label "phone" .
+
+
+###  http://webprotege.stanford.edu/RN2nujsvNhHTtl9uTOKfbU
+<http://webprotege.stanford.edu/RN2nujsvNhHTtl9uTOKfbU> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Action> ;
+                                                        rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Action> ;
+                                                        rdfs:label "happensAfter" .
+
+
+###  http://webprotege.stanford.edu/RTvIUiQn5sHPtm1gcFITRl
+<http://webprotege.stanford.edu/RTvIUiQn5sHPtm1gcFITRl> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                                        rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/RCN5jA8ykeOmo5JfvQIwYpa> ;
+                                                        rdfs:label "hasEnd" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                                                                     rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLClass_00000000000000000004> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#composedOf
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#composedOf> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                               rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Action> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#correlatesWith
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#correlatesWith> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                   <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#definition> "The property showing a relationship or connection between two behaviours. The sub-properties model the degree/strength and type of correlation using use Cohen’s (1992) criteria for the strength of correlations (i.e., if the correlation coefficient  r is 0.10 then it represents a small association,  if r is 0.30 then it is considered a medium correlation and  if r is 0.50 or more then the association is large)." .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#facilitatedBy
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#facilitatedBy> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Facilitator> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasEffectiveness
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasEffectiveness> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Effectiveness> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasGoal
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasGoal> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                            rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Goal> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasImpact
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasImpact> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                              rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Impact> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasIntention
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasIntention> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Intention> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasLegality
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasLegality> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Legality> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasOutcome
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasOutcome> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                               rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Outcome> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasType
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasType> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ,
+                                                                                        <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Motivation> ;
+                                                                            rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isAuthor
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isAuthor> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                             rdfs:range <http://xmlns.com/foaf/0.1/Document> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isReflectiveOf
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isReflectiveOf> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Identity> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#largeCorrelation
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#largeCorrelation> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#correlatesWith> ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#measuredBy
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#measuredBy> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Context> ,
+                                                                                           <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Effectiveness> ,
+                                                                                           <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Impact> ,
+                                                                                           <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Outcome> ;
+                                                                               rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#mediumCorrelation
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#mediumCorrelation> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#correlatesWith> ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                      rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#motivatedBy
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#motivatedBy> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Motivation> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#occursWithin
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#occursWithin> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Context> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#requiresSkill
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#requiresSkill> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Skill> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#restrictedBy
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#restrictedBy> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Barrier> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#toAchieve
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#toAchieve> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Intention> ;
+                                                                              rdfs:range <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Goal> .
+
+
+###  http://www.w3.org/2006/time#hasDuration
+<http://www.w3.org/2006/time#hasDuration> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                          rdfs:range <http://webprotege.stanford.edu/R81lrnrehd9Dd53mwsuit63> .
+
+
+###  http://www.w3.org/2006/time#hasTime
+<http://www.w3.org/2006/time#hasTime> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                      rdfs:range <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R70pm8EcLOQwtFJa5qCPURt
+<http://webprotege.stanford.edu/R70pm8EcLOQwtFJa5qCPURt> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG> ;
+                                                         rdfs:range xsd:integer ;
+                                                         rdfs:label "age" .
+
+
+###  http://webprotege.stanford.edu/R7d1ievOxnZ2pUfF3Ab4qMU
+<http://webprotege.stanford.edu/R7d1ievOxnZ2pUfF3Ab4qMU> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG> ;
+                                                         rdfs:range rdfs:Literal ;
+                                                         rdfs:label "surname"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8gg59JGJgSF9AMW57Osu2d
+<http://webprotege.stanford.edu/R8gg59JGJgSF9AMW57Osu2d> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG> ;
+                                                         rdfs:range rdfs:Literal ;
+                                                         rdfs:label "birthday"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8p2QdibvqseYSER5oaIYJS
+<http://webprotege.stanford.edu/R8p2QdibvqseYSER5oaIYJS> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG> ;
+                                                         rdfs:range rdfs:Literal ;
+                                                         rdfs:label "gender" .
+
+
+###  http://webprotege.stanford.edu/R9BlWMUO5SeNsXCQNNpHc4J
+<http://webprotege.stanford.edu/R9BlWMUO5SeNsXCQNNpHc4J> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG> ;
+                                                         rdfs:range rdfs:Literal ;
+                                                         rdfs:label "title"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDYdUd9SL7Q7tk22lpgvk2x
+<http://webprotege.stanford.edu/RDYdUd9SL7Q7tk22lpgvk2x> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                                                         rdfs:range xsd:float ;
+                                                         rdfs:label "hasNumericalValue" .
+
+
+###  http://webprotege.stanford.edu/RMdFAgZRjW34ilOKi9qtAs
+<http://webprotege.stanford.edu/RMdFAgZRjW34ilOKi9qtAs> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG> ;
+                                                        rdfs:range rdfs:Literal ;
+                                                        rdfs:label "firstname"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isChangeable
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isChangeable> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isDeliberate
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isDeliberate> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isEffortless
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isEffortless> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isHeterogenous
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isHeterogenous> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                   rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isNew
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isNew> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                          rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOpportunistic
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOpportunistic> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                    rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOptional
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOptional> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                               rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG
+<http://webprotege.stanford.edu/R7fURK9uwu9Obl19mJbnVHG> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                                         rdfs:label "Person" .
+
+
+###  http://webprotege.stanford.edu/R81lrnrehd9Dd53mwsuit63
+<http://webprotege.stanford.edu/R81lrnrehd9Dd53mwsuit63> rdf:type owl:Class ;
+                                                         rdfs:label "TimeDuration" .
+
+
+###  http://webprotege.stanford.edu/R8GIxE9ovIWFIQGlc7YFaNA
+<http://webprotege.stanford.edu/R8GIxE9ovIWFIQGlc7YFaNA> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                         rdfs:label "TimeInterval" .
+
+
+###  http://webprotege.stanford.edu/R9IqXekP2lsDwVQrc4muNCO
+<http://webprotege.stanford.edu/R9IqXekP2lsDwVQrc4muNCO> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                                         rdfs:label "Organization" .
+
+
+###  http://webprotege.stanford.edu/R9gFcTP8sgXCo5Sfo5xsQd6
+<http://webprotege.stanford.edu/R9gFcTP8sgXCo5Sfo5xsQd6> rdf:type owl:Class ;
+                                                         rdfs:label "TemporalUnit" .
+
+
+###  http://webprotege.stanford.edu/RCN5jA8ykeOmo5JfvQIwYpa
+<http://webprotege.stanford.edu/RCN5jA8ykeOmo5JfvQIwYpa> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                         rdfs:label "TimeInstant" .
+
+
+###  http://webprotege.stanford.edu/RCUw2QONYqIfOGyV4iVr3dX
+<http://webprotege.stanford.edu/RCUw2QONYqIfOGyV4iVr3dX> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                                         rdfs:label "Group" .
+
+
+###  http://webprotege.stanford.edu/RDtExESuZbaday6OSJgXBzd
+<http://webprotege.stanford.edu/RDtExESuZbaday6OSJgXBzd> rdf:type owl:Class ;
+                                                         rdfs:label "MeasurementUnit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RO0KQrJpCJmqrSwt3gAnzZ
+<http://webprotege.stanford.edu/RO0KQrJpCJmqrSwt3gAnzZ> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                                        rdfs:label "Frequency" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/Measure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Action
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Action> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Barrier
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Barrier> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Context
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Context> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Controlled
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Controlled> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Effectiveness
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Effectiveness> rdf:type owl:Class ;
+                                                                                  <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#noteToSelf> "Revise this concept" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Facilitator
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Facilitator> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Goal
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Goal> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Identity
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Identity> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Impact
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Impact> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Intention
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Intention> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Intrinsic
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Intrinsic> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Legality
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Legality> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Motivation
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Motivation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature> rdf:type owl:Class ;
+                                                                           <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#noteToSelf> "needs revision" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLClass_00000000000000000004
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLClass_00000000000000000004> rdf:type owl:Class ;
+                                                                                                  rdfs:label "MeasurementValue"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Outcome
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Outcome> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Psychological
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Psychological> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Skill
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Skill> rdf:type owl:Class ;
+                                                                          <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#noteToSelf> "further discussion on Knowledge and Skill. Also decide on how to include expertise level for a skill." ;
+                                                                          <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#synonym> "Knowledge" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#autonomous
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#autonomous> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#extrinsic
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#extrinsic> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature> .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class ;
+                                     rdfs:comment "any source of evidence" ;
+                                     rdfs:label "Document" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
