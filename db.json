@@ -1,0 +1,377 @@
+{	
+	"nodes": [
+	{
+	"id": 0,
+	"children": [1,2],
+	"title": "Information School Students",
+	"value": 10000,
+	"properties": [
+		{"Average age": 20},
+		{"Total Courses": 80},
+		{"Average grade": 68}
+	],
+	"relationships": [
+		[{"target": 1},{"type": "organizational"},{"value": "oversees"}],
+		[{"target": 3},{"type": "academic"},{"value": "provides teaching tools"}],
+		[{"target": 0},{"type": "organizational"},{"value": "self-improvement"}]
+	],
+	"description": "The information school at the University of Sheffield is a very well known and highly ranked institution. It has around 10,000 students and is ranked as no.1 in Library and Information Management worldwide."
+	},
+	{
+	"id": 1,
+	"children": [3],
+	"title": "Postgraduate Students",
+	"value": 3000,
+	"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},	
+	{
+	"id": 2,
+	"children": [],
+	"title": "Undergraduate Students",
+	"value": 7000,
+	"properties": [
+		{"Average age": 19},
+		{"Most popular course": "Computer Science"}
+	],
+	"description":"Our undergraduates love it here at Sheffield; they have an amazing education as well as a balanced student life and a lively community"
+	},	
+	{
+	"id": 3,
+	"children": [4,5,6],
+	"title": "PG Taught Students",
+	"value": 3000,
+	"relationships": [
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 3},{"type": "type"},{"value": "relation"}],
+		[{"target": 4},{"type": "personal"},{"value": "highly rate"}]
+	]
+	},	
+	{
+	"id": 4,
+	"children": [2],
+	"title": "Information Management",
+	"value": 1000 
+	},
+	{
+	"id": 5,
+	"children": [],
+	"title": "Data Science",
+	"value": 1500,
+	"properties": [
+		{"Average age": 23.5},
+		{"Rating": 1},
+		{"Total modules": 12},
+		{"Elective modules": 5}
+	]
+	},
+	{
+	"id": 6,
+	"children": [],
+	"title": "Other",
+	"value": 500 
+	}
+],
+	
+	"triggers3":[
+		{
+        "name": "internalLeadPurchasedWebhook",
+        "type": "webhook",
+        "data": {
+            "url": "api.ferrio.com/webhooks/d1579e68-d208-4acf-be96-2e532db8de3d",
+            "code": "f1741a9f-6f9b-461d-940f-b0f2910e94fd"
+        },
+        "workflows": [{
+                "name": "leadPurchasedExternally",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "leadAvailable",
+                "filters": "[expression]",
+                "enabled": true
+            }
+        ]
+    }, {
+        "name": "tutorcruncherWebhook",
+        "type": "webhook",
+        "data": {
+            "url": "api.ferrio.com/webhooks/c6f9b027-c6d2-4b2a-b177-aac7844f0643",
+            "code": "34991710-18e8-47bc-a1fe-0181ce5eed56"
+        },
+        "workflows": [{
+                "name": "cardDetailsUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "appointmentUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "jobStatusUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "invoicePaid",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "repeatingAppointmentCreated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "clientUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "clientChangedPipelineStage",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "jobConfirmationEmailSent",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "studentUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "appointmentCancelled",
+                "filters": "[expression]",
+                "enabled": true
+            }, {
+                "name": "tutorUpdated",
+                "filters": "[expression]",
+                "enabled": true
+            }
+        ]
+    }, {
+        "name": "purchasedLeadContacted",
+        "type": "event",
+        "data": {},
+        "workflows": [{
+                "name": "followUpPurchasedLead",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    }, {
+        "name": "appointmentUpdated",
+        "type": "event",
+        "data": {},
+        "workflows": [{
+                "name": "consultationPriceCheck",
+                "filters": null,
+                "enabled": true
+            }, {
+                "name": "consultationDurationCheck",
+                "filters": null,
+                "enabled": true
+            }, {
+                "name": "consultationUserCheck",
+                "filters": null,
+                "enabled": true
+            }, {
+                "name": "lessonPaymentCheck",
+                "filters": null,
+                "enabled": true
+            }, {
+                "name": "lessonConfimationCheck",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    }	],
+"workflows2":[
+	{
+        "name": "pollSageInvoices",
+        "steps": []
+    },
+    {
+        "name": "pollSageCustomers",
+        "steps": []
+    },
+    {
+        "name": "pollSageInventory",
+        "steps": []
+    },
+    {
+        "name": "formatCrmPhoneNumber",
+        "steps": []
+    },
+    {
+        "name": "updateMarketingContact",
+        "steps": []
+    },
+    {
+        "name": "sendSms",
+        "steps": [
+            {
+                "type": "publishEvent",
+                "data":
+                {
+                    "eventName": "smsSent",
+                    "payload": {}
+                }
+            }
+        ]
+    },
+    {
+        "name": "recordSmsInteraction",
+        "steps": []
+    }
+],	
+		
+	"workflows3":[
+		{
+        "name": "cardDetailsUpdated",
+        "steps": []
+    }, {
+        "name": "appointmentUpdated",
+        "steps": [{
+                "type": "publishEvent",
+                "data": {
+                    "eventName": "appointmentUpdated",
+                    "payload": {}
+                }
+            }
+        ]
+    }, {
+        "name": "jobStatusUpdated",
+        "steps": []
+    }, {
+        "name": "invoicePaid",
+        "steps": []
+    }, {
+        "name": "repeatingAppointmentCreated",
+        "steps": []
+    }, {
+        "name": "clientUpdated",
+        "steps": []
+    }, {
+        "name": "clientChangedPipelineStage",
+        "steps": []
+    }, {
+        "name": "jobConfirmationEmailSent",
+        "steps": []
+    }, {
+        "name": "studentUpdated",
+        "steps": []
+    }, {
+        "name": "appointmentCancelled",
+        "steps": []
+    }, {
+        "name": "tutorUpdated",
+        "steps": []
+    }, {
+        "name": "leadPurchasedExternally",
+        "steps": [{
+                "type": "publishEvent",
+                "data": {
+                    "eventName": "purchasedLeadContacted",
+                    "payload": {}
+                }
+            }
+        ]
+    }, {
+        "name": "leadAvailable",
+        "steps": []
+    }, {
+        "name": "followUpPurchasedLead",
+        "steps": []
+    }, {
+        "name": "consultationPriceCheck",
+        "steps": []
+    }, {
+        "name": "consultationDurationCheck",
+        "steps": []
+    }, {
+        "name": "consultationUserCheck",
+        "steps": []
+    }, {
+        "name": "lessonPaymentCheck",
+        "steps": []
+    }, {
+        "name": "lessonConfimationCheck",
+        "steps": []
+    }
+	
+	],
+	
+"triggers":[
+	{
+        "name": "every5minutes",
+        "type": "timer",
+        "data":
+        {
+            "cron": "*/5 * * * *"
+        },
+        "workflows": [
+            {
+                "name": "pollSageInventory",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    },
+    {
+        "name": "every1hour",
+        "type": "timer",
+        "data":
+        {
+            "cron": "0 */1 * * *"
+        },
+        "workflows": [
+            {
+                "name": "pollSageInvoices",
+                "filters": null,
+                "enabled": false
+            },
+            {
+                "name": "pollSageCustomers",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    },
+    {
+        "name": "crmInbound",
+        "type": "webhook",
+        "data":
+        {
+            "url": "api.ferrio.com/webhooks/d1579e68-d208-4acf-be96-2e532db8de3d",
+            "code": "f1741a9f-6f9b-461d-940f-b0f2910e94fd"
+        },
+        "workflows": [
+            {
+                "name": "formatCrmPhoneNumber",
+                "filters": "[expression]",
+                "enabled": true
+            },
+            {
+                "name": "updateMarketingContact",
+                "filters": null,
+                "enabled": true
+            },
+            {
+                "name": "sendSms",
+                "filters": "[expression]",
+                "enabled": true
+            }
+        ]
+    },
+    {
+        "name": "smsSent",
+        "type": "event",
+        "data": {},
+        "workflows": [
+            {
+                "name": "recordSmsInteraction",
+                "filters": null,
+                "enabled": true
+            }
+        ]
+    }
+]
+}
+	
+	
