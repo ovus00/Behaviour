@@ -3,7 +3,7 @@
 	{
 	"id": 0,
 	"children": [1,2],
-	"title": "Information School Students",
+	"title": "Behaviours",
 	"value": 10000,
 	"properties": [
 		{"Average age": 20},
