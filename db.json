@@ -162,13 +162,13 @@
 	"id": 4,
 	"children": [],
 	"title": "Major Life Area Behaviour",
-	"value": 1000 
+	"value": 50 
 	},
 	{
 	"id": 5,
 	"children": [],
 	"title": "Domestic Life Activities",
-	"value": 1500,
+	"value": 35,
 	"properties": [
 		{"Average age": 23.5},
 		{"Rating": 1},
@@ -180,13 +180,13 @@
 	"id": 6,
 	"children": [],
 	"title": "Learning Applying Knowledge",
-	"value": 500 
+	"value": 35 
 	},
 	{
 	"id": 7,
 	"children": [],
 	"title": "Self Care Behaviour",
-	"value": 500 
+	"value": 25 
 	}
 ]}
 	
