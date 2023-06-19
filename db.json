@@ -62,7 +62,7 @@
 	"id": 2,
 	"children": [21,22,23],
 	"title": "Communicating",
-	"value": 7000,
+	"value": 35,
 	"properties": [
 		{"Average age": 19},
 		{"Most popular course": "Computer Science"}
