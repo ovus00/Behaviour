@@ -150,7 +150,7 @@
 	"id": 3,
 	"children": [],
 	"title": "Community Behaviour",
-	"value": 3000,
+	"value": 65,
 	"relationships": [
 		[{"target": 3},{"type": "type"},{"value": "relation"}],
 		[{"target": 3},{"type": "type"},{"value": "relation"}],
