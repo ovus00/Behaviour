@@ -17,15 +17,50 @@
 	"description": "The information school at the University of Sheffield is a very well known and highly ranked institution. It has around 10,000 students and is ranked as no.1 in Library and Information Management worldwide."
 	},
 	{
-	"id": 1,
-	"children": [],
-	"title": "Moving/Exercising",
-	"value": 15,
-	"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
-	},	
+		"id": 1,
+		"children": [11,12,13,14,15],
+		"title": "Moving/Exercising",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 11,
+		"children": [],
+		"title": "Biking",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 12,
+		"children": [],
+		"title": "Running",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 13,
+		"children": [],
+		"title": "Stretching",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 14,
+		"children": [],
+		"title": "Swimming",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 15,
+		"children": [],
+		"title": "Walking",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
 	{
 	"id": 2,
-	"children": [],
+	"children": [21,22,23,24,25,26],
 	"title": "Communicating",
 	"value": 7000,
 	"properties": [
@@ -34,6 +69,83 @@
 	],
 	"description":"Our undergraduates love it here at Sheffield; they have an amazing education as well as a balanced student life and a lively community"
 	},	
+	{
+		"id": 21,
+		"children": [],
+		"title": "Interactive Communication",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 22,
+		"children": [221,222],
+		"title": "Producing Communications",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 23,
+		"children": [],
+		"title": "Receiving Communications",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 221,
+		"children": [2211,2212,2213,2214],
+		"title": "Non-verbal communications",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 222,
+		"children": [2221,2222],
+		"title": "Verbal Communications",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 2211,
+		"children": [],
+		"title": "Crying",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 2212,
+		"children": [],
+		"title": "Laughing",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 2213,
+		"children": [],
+		"title": "Producing facial expressions",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 2214,
+		"children": [],
+		"title": "Touching",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 2221,
+		"children": [],
+		"title": "Speaking",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
+	{
+		"id": 2222,
+		"children": [],
+		"title": "Writing messages",
+		"value": 15,
+		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+	},
 	{
 	"id": 3,
 	"children": [],
