@@ -22,6 +22,10 @@
 		"title": "Moving/Exercising",
 		"value": 100,
 		"description": "We have some of the most amazing postgraduate students who have gone on to accomplish great research as well as marvelous innovations"
+		"relationships": [
+			[{"target": 2},{"type": "organizational"},{"value": "Correlation: 0.4"}],
+			[{"target": 3},{"type": "academic"},{"value": ""}]
+		],
 	},
 	{
 		"id": 11,
@@ -180,6 +184,9 @@
 	"id": 6,
 	"children": [],
 	"title": "Learning Applying Knowledge",
+	"relationships": [
+		[{"target": 7},{"type": "organizational"},{"value": "correlation: 0.32"}]		
+	],
 	"value": 35 
 	},
 	{
