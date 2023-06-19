@@ -25,7 +25,7 @@
 		"relationships": [
 			[{"target": 2},{"type": "organizational"},{"value": "Correlation: 0.4"}],
 			[{"target": 3},{"type": "academic"},{"value": ""}]
-		],
+		]
 	},
 	{
 		"id": 11,
